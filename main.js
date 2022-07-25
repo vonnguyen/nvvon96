@@ -12,4 +12,16 @@ window.addEventListener('load',function(){
 
         }
     })
+
+    let icon = document.querySelector('.icon-cart');
+    let cart = document.querySelector('.main-cart');
+    let iconClose = document.querySelector('.close')
+
+    icon.addEventListener('click',function(e){
+        cart.classList.add('active');
+    })
+    iconClose.addEventListener('click',function(e){
+        cart.classList.remove('active');
+    })
+
 })

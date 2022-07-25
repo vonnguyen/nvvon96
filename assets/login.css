@@ -240,7 +240,7 @@ a:hover {
 /* --------------------------Contact------------------------------------- */
 .fa-map iframe{
     width: 100%;
-    height: 600px;
+    height: 608px;
 }
 .fa-map::before{
     content: '';
