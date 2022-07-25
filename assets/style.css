@@ -59,7 +59,7 @@
 .page-show-list {
   opacity: 0;
   visibility: hidden;
-  transition: all 0.8s linear;
+  transition: opacity 0.8s linear;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   position: absolute;
   top: 40px;
@@ -67,7 +67,17 @@
   width: 150px;
   background-color: #fff;
 }
+.page-show-list::after{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100px;
+  height: 10px;
+  background-color: transparent;
+  top: -12px;
+  left: 0%;
 
+}
 .page-show-list li a {
   display: block;
   font-family: var(--font);
@@ -127,20 +137,33 @@
   position: absolute;
   opacity: 0;
   visibility: hidden;
-  transition: all 0.8s linear;
-  top: 40px;
-  padding: 30px;
+  transition: opacity 0.3s linear;
+  top: 80px;
+  padding:0 30px 30px;
   left: 0;
   right: 0;
 }
+.collection-show-list::after{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  background-color: transparent;
+  top:-27px;
+  left: 42%;
 
+}
 .collection-show-list .row {
   background-color: #fff;
   padding: 16px 0;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
-
+.collection-show .collection-show-list{
+  overflow: hidden;
+}
 .collection-show:hover .collection-show-list {
+  overflow: unset;
   visibility: visible;
   opacity: 1;
 }
@@ -504,6 +527,15 @@ i.fa-solid.fa-bag-shopping {
 .groups-img {
   position: relative;
   overflow: hidden;
+}
+
+.groups-img .save {
+  position: absolute;
+  background-color: #571F7C;
+  color: #fff;
+  top: 10px;
+  right: 10px;
+  padding: 8px 13px;
 }
 
 .img-ctn3:hover img:nth-child(2) {
