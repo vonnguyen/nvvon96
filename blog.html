@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="./assets/base.css">
     <link rel="stylesheet" href="./assets/style.css">
     <link rel="stylesheet" href="./assets/login.css">
+    <link rel="stylesheet" href="./assets/product.css">
+    <link rel="stylesheet" href="./assets/cart.css">
 </head>
 
 <body>
@@ -34,7 +36,7 @@
             <div class="menu-header">
                 <ul class="subnav-menu">
                     <li><a href="index.html">Home</a></li>
-                    <li class="collection-show"><a href="#">collection <i class="fa-solid fa-chevron-down"></i></a>
+                    <li class="collection-show"><a href="collection.html">Collection <i class="fa-solid fa-chevron-down"></i></a>
 
 
                         <div class="collection-show-list">
@@ -76,11 +78,11 @@
                     <li><a href="product.html">Shoes</a></li>
                     <li><a href="#">Boots</a></li>
                     <li><a href="#">Climbing</a></li>
-                    <li class="page-show"><a href="#">Pages <i class="fa-solid fa-chevron-down"></i></a>
+                    <li class="page-show"><a href="blog.html">Pages <i class="fa-solid fa-chevron-down"></i></a>
                         <ul class="page-show-list">
                             <li><a href="about.html">About us</a></li>
                             <li><a href="contact.html">Contact us</a></li>
-                            <li><a href="#">Blog</a></li>
+                            <li><a href="blog.html">Blog</a></li>
                             <li><a href="">Wishlist</a></li>
                         </ul>
                     </li>
@@ -109,6 +111,7 @@
                 <p>NEW</p>
                 <ul>
                     <li><a href="index.html">HOME</a> </li>
+                    <li>/</li>
                     <li>New</li>
                 </ul>
             </div>
@@ -479,38 +482,25 @@
                 </div>
             </div>
 
-
-            <div class="container-cart">
-                <div class="product-cart">
-                    <div class="item-img-cart">
-                        <img src="./assets/img/img-ctn2/shoeyelow.webp" alt="">
-                    </div>
-                    <div class="detais-cart">
-                        <h6>Bast Shoe</h6>
-                        <p>7 / yellow / leather</p>
-                        <span>$106.00</span>
-                        <div class="dt-sc-cart">
-                            <span class="up-down">-</span>
-                            <input type="text" placeholder="1">
-                            <span class="up-down">+</span>
-                        </div>
-                    </div>
-                    
-                </div><div class="sub-total">
-                        <div class="p-title">Total</div>
-                        <span class="money">$106.00</span>
-                    </div>
-                    <div class="p-main">
-                        Shipping, taxes, and discounts will be calculated at checkout.
-                    </div>
-                    <div class="btn-cart">
-                        <button>PRODUCT TO CHECK OUT</button>
-                    </div>
-                    <div class="btn-cart">
-                        <button>VIEW CART</button>
-                    </div>
+            <div class="container-cart">       
+               <!-- Them san pham vao -->
             </div>
 
+            <div class="bottom-cart">
+                <div class="sub-total">
+                    <div class="p-title">Total</div>
+                    <span class="money">$106.00</span>
+                </div>
+                <div class="p-main">
+                    Shipping, taxes, and discounts will be calculated at checkout.
+                </div>
+                <div class="btn-cart">
+                    <button>PRODUCT TO CHECK OUT</button>
+                </div>
+                <div class="btn-cart">
+                    <button>VIEW CART</button>
+                </div>
+            </div>
 
         </div>
 
@@ -520,6 +510,7 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <script src="./main.js"></script>
+    <script src="./cart.js"></script>
 </body>
 
 </html>
