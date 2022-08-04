@@ -4,7 +4,7 @@ window.addEventListener('load',function(){
     
     window.addEventListener('scroll',function(){
         // console.log([window])
-        console.log(window.scrollY);
+        // console.log(window.scrollY);
         if(window.scrollY >= headerHeight){
             header.classList.add('fixed');
         }else{
@@ -13,15 +13,6 @@ window.addEventListener('load',function(){
         }
     })
 
-    let icon = document.querySelector('.icon-cart');
-    let cart = document.querySelector('.main-cart');
-    let iconClose = document.querySelector('.close')
-
-    icon.addEventListener('click',function(e){
-        cart.classList.add('active');
-    })
-    iconClose.addEventListener('click',function(e){
-        cart.classList.remove('active');
-    })
+    
 
 })

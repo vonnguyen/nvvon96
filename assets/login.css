@@ -3,29 +3,33 @@
     background-size: cover;
     padding: 130px 0;
     width: 100%;
-    height: auto;
+    height: 50vh;
     background-attachment: fixed;
     position: relative;
     z-index: 1;
     margin: 0 0 80px;
+    position: relative;
 }
-
-/* .slide-header::before {
-    position: absolute;
-    background-color: #000000;
+.slide-header::before { 
+    position: absolute;    
     display: block;
-    width: 100%;
-    height: 100%;
+    content: '';
+    top:0;
+    bottom: 0;
     left: 0;
-    top: 0;
-    z-index: -1;
-    opacity: 0.45;
-} */
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
 
 .contain-slide {
     text-align: center;
     color: #fff;
-    margin-bottom: 25px;
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
 }
 
 .contain-slide a {
@@ -34,18 +38,13 @@
 }
 
 .contain-slide li{
-    padding: 0 20px;
+    padding: 0 10px;
     position: relative;
 }
 
-.contain-slide ul::after {
-    content: '';
-    position: absolute;
-    height: 17px;
-    width: 3px;
-    background-color: #fff;
-    transform: rotate3d(1, 1, 1, 45deg);
-    left: 50%
+ .contain-slide ul {
+    display: flex;
+    justify-content: space-around;
 }
 
 .contain-slide li a:hover , 
@@ -57,6 +56,7 @@
 .contain-slide p {
     font-family: var(--roboto);
     font-size: 32px;
+    letter-spacing: 2.5px;
 }
 
 .contain-slide ul {
@@ -74,10 +74,7 @@
     font-size: 15px;
     font-family: var(--font);
 }
-/* contain blog ----------------------------*/
-/* .container-123{
-    margin-bottom: 20px;
-} */
+
 .container-1{
 box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 margin-bottom: 35px;
@@ -322,8 +319,41 @@ a:hover {
     background-color: #000;
     opacity: 0.8;
 }
-
-
+/* ------------------------------------Collection--------------------------------- */
+.collection-text-center {
+    margin: 0 0 60px;
+    text-align: center;
+    border: 1px solid;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.collection-detail {
+    margin-top: 30px;
+       
+}
+.collection-detail h5 {
+    margin: 0 0 20px;
+}
+.collection-detail h5 a {
+    font-family: var(--roboto);
+    font-size: 20px;  
+}
+.collection-count {
+    font-family: var(--font);
+    font-size: 16px;
+    color: #571F7C;
+}
+.collection-btn button{
+    padding: 15px 30px;
+    background-color: #571F7C;
+    font-family: var(--font);
+    font-size: 16px;
+    color: #fff;
+    transition: all 0.5s linear;
+    margin: 0 0 30px;
+}
+.collection-btn button:hover {
+    background-color: #000;
+}
 
 
 /*  -------------------------------------------------------- */
